@@ -56,4 +56,4 @@ void loop() {
 }
 }
 ```
-![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0023.JPG)![image]()
+![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0023.JPG)![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0024.JPG)  
