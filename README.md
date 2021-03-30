@@ -58,5 +58,34 @@ void loop() {
 ```
 ![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0023.JPG)![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0024.JPG)  
 加裝風扇(溫度大於20度時開啟)  
-輸出腳:N1(5),N2(6),N3(GND)
+輸出腳:N1(5),N2(6),N3(GND)  
+新增程式碼(1)  
+```C++
+void motor(int a)
+  {if (a==1){
+  analogWrite(5,240);
+  analogWrite(6,0);}
+  else{
+  analogWrite(5,HIGH);
+  analogWrite(6,HIGH);}  
+}
+```  
+新增程式碼(2)  
+```C++
+  if(a>=20)
+  {
+   tone(3,1500);
+   delay(150);
+   noTone(3);
+   delay(150);
+   motor(1);
+   Serial.print(F("a=:"));
+   Serial.print(a);
+   Serial.println(F("°C"));
+  }
+  else{
+  motor(0);
+}
+}
+```
 ![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0028.JPG)
