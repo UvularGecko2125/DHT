@@ -56,4 +56,4 @@ void loop() {
 }
 }
 ```
-![image]()![image]()
+![image](https://github.com/UvularGecko2125/DHT/blob/main/DSC_0023.JPG)![image]()
